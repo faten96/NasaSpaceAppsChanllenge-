@@ -6,9 +6,9 @@
 package io.astrogeeks.catamate;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class LogoActivity extends AppCompatActivity {
 
@@ -21,10 +21,9 @@ public class LogoActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                
-//                Intent mainIntent = new Intent(LogoActivity.this, MainActivity.class);
-//                startActivity(mainIntent);
-//                finish();
+                Intent mainIntent = new Intent(LogoActivity.this, LoginActivity.class);
+                startActivity(mainIntent);
+                finish();
             }
         }, splashTime);
     }
