@@ -4,8 +4,10 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Loader;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -333,12 +335,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+                // TODO set the session token
 //                Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
 //                Bundle b = new Bundle();
 //                b.putString("email", mEmail); //Your id
 //                homeIntent.putExtras(b); //Put your id to your next Intent
 //                startActivity(homeIntent);
-                finish();
+//                finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();

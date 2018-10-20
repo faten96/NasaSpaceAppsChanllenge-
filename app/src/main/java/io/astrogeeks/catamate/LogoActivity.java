@@ -21,6 +21,7 @@ public class LogoActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                // TODO get the session token and decide where to go
                 Intent mainIntent = new Intent(LogoActivity.this, LoginActivity.class);
                 startActivity(mainIntent);
                 finish();
