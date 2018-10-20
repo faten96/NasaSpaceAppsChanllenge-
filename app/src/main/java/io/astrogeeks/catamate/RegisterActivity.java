@@ -184,7 +184,7 @@ public class RegisterActivity extends AppCompatActivity implements LoaderManager
 
         // Check for a valid matching passwords.
         if (!matchedPassword(password, confirmedPassword)) {
-            mConfirmedPasswordView.setError(getString(R.string.error_invalid_password));
+            mConfirmedPasswordView.setError(getString(R.string.error_not_matched_password));
             focusView = mConfirmedPasswordView;
             cancel = true;
         }
