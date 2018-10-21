@@ -2,6 +2,7 @@
     <string name="app_name">CataMate</string>
     <string name="title_activity_login">Sign in</string>
     <string name="title_activity_register">Register</string>
+    <string name="title_activity_infos">Infos</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -23,4 +24,10 @@
     </string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="marketing_com_acceptance">I\'d like to receive marketing and policy communications from CataMate and its partners.</string>
+
+    <string name="male_sex">Male</string>
+    <string name="female_sex">Female</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="action_save">Save</string>
 </resources>
